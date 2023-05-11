@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<title>Centimeter to Feet Calculator</title>
+	<style>
+		body, td {
+			text-align: center;
+
+		}
+		p{
+			background-color: white;
+		}
+	</style>
+</head>
+<body><br><br>
+	<div class="row">
+		<div class="col-xl-4"></div>
+		<div class="col-xl-4 container-xl">
+		<input type="text" id="num1" placeholder="Centimeters"><br><br>
+		<input class="btn btn-primary" type="submit" value="Convert to ft" onclick="convert()"><br><br>
+		<table class="table table-bordered">
+			<tr>
+				<td id="id1" class="container-xl"></td>
+			</tr>
+		</table>
+		</div>
+		<div class="col-xl-4"></div>
+	</div>
+	<script>
+		function convert() {
+			var x = document.getElementById('num1').value;
+			var answer = x/30.48 + " ft";
+			document.getElementById('id1').innerHTML = answer;
+		}
+	</script>
+</body>
+</html>
+
+</body>
+</html>
